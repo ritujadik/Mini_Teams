@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Teams Chat</title>
+</head>
+<body>
+  <h2>Join a Team</h2>
+  <label>Username:</label>
+  <input id="username" placeholder="username" type="text"/><br><br>
+  <label>Department:</label>
+  <select id="team">Team<br><br>
+    <option value="engineering">Engineering</option>
+    <option value="marketing">Marketing</option>
+    <option value="science">Science</option>
+  </select><br><br>
+  <button onclick="joinTeam()">Join Team</button>
+  <button onclick="reset()">Reset</button>
+
+  <div id="chat" style="display:none;">
+    <h3>Chat</h3>
+    <input id="message" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+    <ul id="messages"></ul>
+  </div>
+
+  <script src="/static/client.js"></script>
+</body>
+</html>
